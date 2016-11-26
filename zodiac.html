@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Zodiac</title>
+	</head>
+	<body>
+
+
+
+
+		    <div>
+		        <form name="myForm" action="#">
+		            <table>
+		                <tr>
+		                    <td>Enter Date</td>
+		                    <td><input type="text" name="dateInput" id="dateInput" placeholder="Date"  maxlength="2" onclick="dateCheck(document.myForm.dateInput)" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));"/></td>
+		                    <td><span id="span1"></span></td>
+		                </tr>
+		                <tr>
+		                    <td>Enter Month</td>
+		                    <td><input type="text" name="monthInput" id="monthInput" placeholder="Month"  maxlength="2" onclick="dateCheck(document.myForm.dateInput)" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));"/></td>
+		                    <td><span id="span2"></span></td>
+		                </tr>
+		                <tr>
+		                    <td>Enter Year</td>
+		                    <td><input type="text" name= "yearInput" id="yearInput" placeholder="Year" minlength="4" maxlength="4" onclick="dateCheck()" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));"/></td>
+		                    <td><span id="span3"></span></td>
+		                </tr>
+
+		                <tr>
+		                    <td></td>
+		                    <td><input type="submit" name="submit" value="Submit" onclick="dateCheck()"/></td>
+		                </tr>
+		            </table>
+		        </form>
+		    </div>
+
+
+		<script type="text/javascript" src="zodicsign.js"></script>
+		<script type="text/javascript" src="calzodicsign.js"></script>
+	</body>
+</html>
